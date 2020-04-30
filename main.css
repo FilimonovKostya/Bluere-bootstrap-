@@ -112,17 +112,17 @@ h4 {
   font-size: 40px;
   color: #484848;
 }
-.section-watch .nav-pills .nav-link {
+.section-tabs .nav-pills .nav-link {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
   padding: 14px 30px;
   color: #484848;
 }
-.section-watch .nav-pills {
+.section-tabs .nav-pills {
   margin-bottom: 20px;
 }
-.section-watch .nav-pills .nav-item .nav-link.active {
+.section-tabs .nav-pills .nav-item .nav-link.active {
   background-color: #f42267;
   color: white;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 35%);
@@ -190,24 +190,100 @@ h4 {
   position: relative;
   border-radius: 10px;
 }
-  /*=====================MEDIA=========*/
-  @media only screen and (max-width: 991px) {
-    .main-header-text {
-      background-color: rgba(0, 0, 0, 30%);
-    }
-    .navbar-nav {
-      background-image: linear-gradient(
-        45deg,
-        #ed1b33 0%,
-        #442e82 99%,
-        #442e82 100%
-      );
-      
-      position: relative;
-      z-index: 1;
-      padding: 0 15px;
-    
-    }
+
+.section-work {
+  background-color: #f1f1f1;
+}
+.section-work .nav-pills {
+  margin: 30px 0px;
+}
+.gallery-item {
+  margin-bottom: 20px;
+}
+.gallery a img {
+  transition: all 0.5s;
+}
+.gallery a:hover img {
+  box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+.section-revievs {
+  background: url(images/Background.png) center no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+.section-revievs .carousel-caption {
+  top: 5%;
+  bottom: auto;
+  text-align: left;
+}
+.section-revievs .blockquote {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  position: relative;
+  padding-left: 40px;
+  margin-top: 70px;
+}
+
+.section-revievs .blockquote::before{
+  content: '\201C';
+  float: left;
+  font-size: 150px;
+  font-weight: 600;
+  font-style: italic;
+  color: #f42267;
+  position: absolute;
+  top: -80px;
+  left: -33px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=====================MEDIA=========*/
+@media only screen and (max-width: 991px) {
+  .main-header-text {
+    background-color: rgba(0, 0, 0, 30%);
+  }
+  .navbar-nav {
+    background-image: linear-gradient(
+      45deg,
+      #ed1b33 0%,
+      #442e82 99%,
+      #442e82 100%
+    );
+
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+  }
   @media only screen and (max-width: 768px) {
     .main-header-text {
       left: 0;
@@ -219,7 +295,6 @@ h4 {
       font-size: 30px;
     }
   }
-
 
   @media only screen and (max-width: 600px) {
     .main-header-text {
@@ -237,8 +312,6 @@ h4 {
     }
   }
 
-
-
   @media only screen and (max-width: 480px) {
     .section-watch .nav-pills .nav-link {
       padding: 8px 16px;
@@ -246,4 +319,5 @@ h4 {
     .section-watch .nav-pills .nav-item {
       width: 100%;
     }
-  }}
+  }
+}
