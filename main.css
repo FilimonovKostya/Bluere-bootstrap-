@@ -226,8 +226,8 @@ h4 {
   margin-top: 70px;
 }
 
-.section-revievs .blockquote::before{
-  content: '\201C';
+.section-revievs .blockquote::before {
+  content: "\201C";
   float: left;
   font-size: 150px;
   font-weight: 600;
@@ -236,29 +236,128 @@ h4 {
   position: absolute;
   top: -80px;
   left: -33px;
+}
+.section-forms {
+  background: url(images/footerbg.png) center no-repeat;
+  background-size: cover;
+  color: white;
+}
+.section-forms h5 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.section-forms form {
+  margin-top: 50px;
+}
+.section-forms .btn-violet {
+  background-color: #4b2d7f;
+}
+.btn-violet.btn-shadow {
+  background: #3a2362;
+  box-shadow: 0 6px 0 #a57ee9;
+}
+.btn-violet.btn-shadow:hover {
+  box-shadow: 0 3px 0 #a57ee9;
+}
+.section-forms .form-control {
+  height: 51px;
+  background: rgba(255, 255, 255, 0.35);
+  color: white;
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  
+}
+.section-forms .form-control::placeholder {
+  color: #fff;
+}
+.section-forms .form-control:focus{
+  box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 0.25);
+}
+
+.footer{
+padding: 100px 0;
+font-family: 'Poppins', sans-serif;
+}
+.footer h5{
+  font-size: 25px;
+  color: #4b2d7f;
+  font-weight: 700;
+
+}
+.footer ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.footer ul li a{
+  font-size: 15px;
+  font-weight: 600;
+  color: #171717;
+
+
+}
+.footer-images img{
+  margin-bottom: 20px;
 
 }
 
+.copyright{
+  background-color: #f6f6f6;
+  padding: 40px 0;
+  font-family: 'Poppins', sans-serif;
 
+}
 
+.copyright a,
+.copyright span{
+  font-size: 16px;
+  font-weight: 600;
+  color: #171717;
+  position: relative;
+}
+.copyright a:hover{
+  text-decoration: underline;
+}
 
+.copyright a::after,
+.copyright span::after{
+  content: '\00B7  ';
+  position: absolute;
+  right: -3px;
 
+}
+.copyright li:last-child a::after,
+.copyright li:last-child a::after{
+  content: '';
+}
 
+.scrollToTop{
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  border-radius: 4px;
+  display: none;
+  font-size: 33px;
+  height: 50px;
+  width: 50px;
+  z-index: 1001;
+  color:white;
+  transition: all .5s;
+  background-color: #da1757;
+  border: 0;
+  cursor: pointer;
 
+}
+.scrollToTop:hover{
+  background-color: #fff;
+  text-decoration: none;
+  outline: none;
+  color: #da1757;
+  border: 1px solid #da1757;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -284,40 +383,65 @@ h4 {
     z-index: 1;
     padding: 0 15px;
   }
-  @media only screen and (max-width: 768px) {
-    .main-header-text {
-      left: 0;
-      margin: 0 20px;
-      max-width: 100%;
-    }
-    h3,
-    h4 {
-      font-size: 30px;
-    }
+  section {
+    padding: 50px 0;
   }
+  .section-revievs h3,
+  .section-revievs h4 {
+    font-size: 24px;
+  }
+  .section-revievs .blockquote {
+    font-size: 17px;
+    padding-left: 20px;
+    margin-top: 40px;
+  }
+  .section-revievs .blockquote::before {
+    font-size: 100px;
+    top: -40px;
+  }
+}
 
-  @media only screen and (max-width: 600px) {
-    .main-header-text {
-      top: 90px;
-    }
-    .main-header-buttons .btn {
-      display: block;
-      margin: 15px 0;
-      width: 100%;
-    }
+@media only screen and (max-width: 768px) {
+  .main-header-text {
+    left: 0;
+    margin: 0 20px;
+    max-width: 100%;
   }
-  @media only screen and (max-width: 380px) {
-    .main-header .navbar-brand {
-      font-size: 30px;
-    }
+  h3,
+  h4 {
+    font-size: 30px;
   }
+}
 
-  @media only screen and (max-width: 480px) {
-    .section-watch .nav-pills .nav-link {
-      padding: 8px 16px;
-    }
-    .section-watch .nav-pills .nav-item {
-      width: 100%;
-    }
+@media only screen and (max-width: 600px) {
+  .main-header-text {
+    top: 90px;
+  }
+  .main-header-buttons .btn {
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .main-header .navbar-brand {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section-watch .nav-pills .nav-link {
+    padding: 8px 16px;
+  }
+  .section-watch .nav-pills .nav-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .section-revievs .carousel-caption {
+    position: static;
+    width: 70%;
+    margin: auto;
   }
 }
